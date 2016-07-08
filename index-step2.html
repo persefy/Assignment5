@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 2</title>
+</head>
+<body>
+<!--2.	Add a button to a web page and uniquely ID the button. Write a script that finds the button by its ID. Then use the DOM Element method to associate a function with the onclick event of the button. Again, display the message “I have been clicked” out into an alert box.-->
+    <button id="theButton">Click Me!</button>
+    
+       
+    <script type="text/javascript">
+        var clickMe = document.getElementById("theButton");
+        clickMe.onclick = function() {
+        window.alert("I have been clicked");
+        }
+        
+    </script>
+
+</body>
+</html>

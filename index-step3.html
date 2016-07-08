@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 3</title>
+</head>
+<body>
+<!--3.	Add a button to a web page and uniquely ID the button. Write a script that attaches an event listener to the button and listens for the click event. When it’s heard, a user-defined function should be called and the message “I have been clicked” should be displayed out into an alert box.	-->
+    <button id="theButton">I shall be clicked</button>
+    
+       
+    <script type="text/javascript">
+        theButton.addEventListener("click", clickMe, false);
+        function clickMe() {
+            alert('I have been clicked');
+        }
+    </script>
+
+</body>
+</html>
