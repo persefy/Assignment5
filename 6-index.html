@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 6</title>
+</head>
+
+<body>
+    <!--6 Add a link to your web page. Add the text “Visit Google” to the link, set the ID to “redirect” and set the href attribute to http://www.google.com. Now, write a script that alerts the user that they clicked on the link but prevents the browser from also redirecting to the Google site. -->
+
+    <a href="http://www.google.com" id="redirect">Visit Google</a>
+
+    <script type="text/javascript">
+        var clickLink = document.getElementById("redirect");
+        clickLink.addEventListener("click", function() {
+            window.alert('I have been clicked');
+            event.preventDefault();
+        }, false);
+        
+        
+    </script>
+
+</body>
+</html>

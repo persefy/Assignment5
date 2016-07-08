@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 7</title>
+</head>
+
+<body>
+    <!--7 Add a text box and a button to a web page. Add an event listener to the button. When the click event is heard, the button should be disabled, and the text that the user input into the text box should be displayed within an alert box. -->
+
+
+        <input type="text" id="anything" />
+        <input type="button" value="Click Here" id="theButton" />
+
+       
+    <script type="text/javascript">
+        var textInput = document.getElementById("anything");
+        theButton.addEventListener("click", function() {
+            theButton.disabled = true;
+            alert(textInput.value);
+        }, false);
+
+    </script>
+
+</body>
+</html>
