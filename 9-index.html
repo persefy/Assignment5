@@ -8,16 +8,29 @@
 <body>
     <!--9.	Add two buttons to a web page. Add the text Start to one button and Stop to the other button. Using the BOM .setInterval() method, figure out a way to move display the text “Learning JavaScript is fun!” into the console window every 2 seconds but only when the Start button is clicked. If the user clicks on the Stop button, the console should stop logging the text immediately. -->
 
-
+    <button></button>
         <input type="button" id="start" value="start" />
         <input type="button" id="stop" value="stop" />
 
     <script type="text/javascript">
+        var start = document.getElementById("start");
+        var stop = document.getElementById("stop");
+        
         start.addEventListener("click", startButton, false);
         function startButton() {
             window.console.log('Learning JavaScript is fun!');
         }
         window.setInterval(startButton, 2000);
+        var cease = window.setInterval(startButton, 2000);
+        
+        
+        stop.addEventListener("click", stopButton, false);
+            function stopButton() {
+                window.clearInterval(cease);
+        }
+        
+        
+        
         
 
 
