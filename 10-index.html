@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Step 9</title>
+    <title>Step 10</title>
 </head>
 
 <body>
     <!--10.	Add a drop down list to a web page. Populate the drop down list with 4 items. Add a button next to the drop down list and set the text to “Select”. When the user clicks the button, the item selected in the drop down list should appear within an alert box. -->
-       
+        
+            <select id="dropList">
+              <option value="banana">Banana</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="cranberry">Cranberry</option>
+              <option value="kiwi">Kiwi</option>
+            </select>
+            <input type="button" value="Select" id="btn" />
         
     <script type="text/javascript">
         
+        var selected = document.querySelector("Select");
+        var btn = document.getElementById("btn");
         
-
-
+        btn.addEventListener('click', display, false);
+            function display() {
+                if (document.getElementById("dropList").selectedIndex == 0) {
+                    alert('Banana');
+                    } else if (document.getElementById("dropList").selectedIndex == 1){
+                        alert('Strawberry');
+                    } else if (document.getElementById("dropList").selectedIndex == 2) {
+                        alert('Cranberry');
+                    } else if (document.getElementById("dropList").selectedIndex == 3) {
+                        alert('Kiwi');
+                    }
+                }
+        
     </script>
 
 </body>
